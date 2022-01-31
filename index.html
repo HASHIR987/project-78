@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css;
+  <script src="https://www.drv.tw/inc/wd.js?s=fnog8yl5ubvaayhyo7xxxw"></script></head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="FB1.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father (Arshad Ahmed Buchh)",
+   "3. My Mother (Faqta Buchh)",
+   "4. My Sister (Eshail Buchh)",
+   "5. Me (Hashir Buchh )"
+   ]
+ var images=[
+     "papa.jpg",
+     "mother.jpg",
+     "sister.jpg",
+     "me.png",
+  ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  </body>
+</html>
